@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: tttt;
+  src: url(../fonts/jadid.ttf);
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  user-select: none;
+}
+
+.main {
+  padding: 10px;
+}
+
+.menu-toggle{
+  display: none;
+  font-size: 28px;
+  color: #000;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.menu {
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 100px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 99;
+}
+.menu-bg {
+  background-color: rgb(168, 170, 170);
+  opacity: 0.5;
+  filter: blur(2px);
+  width: 100%;
+  height: 50px;
+  border-radius: 100px;
+  position: absolute;
+}
+.menu-content {
+  width: 100%;
+  height: 50px;
+  top: 10px;
+  position: absolute;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 100px;
+  border: 0px solid green;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width:700px){
+  .menu{
+    height: auto;
+    padding: 10px;
+  }
+
+  .menu-toggle{
+    display: block;
+  }
+
+  .menu-content{
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+}
+.slider {
+  border: 0px solid red;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.slide {
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+.slide p {
+  position: absolute;
+  font-family: tttt;
+  font-size: 250px;
+  opacity: 0.7;
+
+  top: 50px;
+  transform: translateX(10%);
+  color: #866060;
+  filter: blur(2px);
+}
+
+.badges {
+  margin-top: 15px;
+  background-color: #866060;
+  width: 100%;
+  height: 100px;
+}
+#wl {
+  color: rgb(251, 255, 0);
+  font: bold;
+}
+.footer {
+  padding: 50px 0;
+  direction: rtl;
+  font-size: 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.footer-box {
+  flex: 1;
+  padding: 0 30px;
+  border-left: 3px solid #555;
+  text-align: center;
+  min-height: 150px;
+}
+
+.footer-box:last-child {
+  border-left: none;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.header {
+  height: 100px;
+  border-radius: 5px;
+box-shadow:1px 1px 10px #dbdada ;
+margin-bottom: 20px;
+}
+
+.header p{
+  font-size: 50px;
+  text-align: center;
+}
+
+.content{
+width: 800px;
+margin: 0 auto;
+box-shadow: 1px 1px 5px #b4b3b3;
+padding: 5px;
+}
